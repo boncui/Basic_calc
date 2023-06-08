@@ -1,0 +1,59 @@
+#This program is introduced and inspired by FreeCodeCamp
+#Written by David Cui
+#Basic Calculator
+
+
+#Basic Arthimetic operators
+def add(x, y):
+    answer = x + y
+    print(f"{x} + {y} = {answer}\n") 
+
+def subtract(x, y):
+    answer = x - y
+    print(f"{x} - {y} = {answer}\n")
+
+def multiply(x, y):
+    answer = x*y
+    print(f"{x} x {y} = {answer}\n")
+
+def divide(x, y):
+    answer = x/y
+    print(f"{x} / {y} = {answer}\n")
+    
+#print options to the user
+    #Basic mathematic operations
+ 
+while True:   
+    print("""
+A. Addition
+B. Subtraction
+C. Multiplication
+D. Division
+E. Exit
+        """)
+
+    choice = input("Please enter your choice of operation: ")
+
+    if choice == "A" or choice == "a":
+        print("Addition")
+        a = float(input("input first number: "))
+        b = float(input("input second number: "))
+        add(a, b)
+    elif choice == "B" or choice == "b":
+        print("Subtraction")
+        a = float(input("input first number: "))
+        b = float(input("input second number: "))
+        subtract(a, b)
+    elif choice == "C" or choice == "c":
+        print("Multiplication")
+        a = float(input("input first number: "))
+        b = float(input("input second number: "))
+        multiply(a, b)
+    elif choice == "D" or choice == "d":
+        print("Division")
+        a = float(input("input first number: "))
+        b = float(input("input second number: "))
+        divide(a, b)
+    else:
+        print("Program terminated")
+        quit()
